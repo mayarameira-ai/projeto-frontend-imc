@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./car
 export default function Cards() {
     return (
         <section className="flex flex-col md:flex-row justify-center gap-6 p-10 bg-gray-50">
-            {/* Card 1 */}
+
             <Card className="w-full max-w-sm text-center shadow-md">
                 <CardHeader className="flex flex-col items-center">
                     <div className="bg-blue-100 p-3 rounded-full mb-3">
@@ -17,7 +17,7 @@ export default function Cards() {
                 </CardHeader>
             </Card>
 
-            {/* Card 2 */}
+
             <Card className="w-full max-w-sm text-center shadow-md">
                 <CardHeader className="flex flex-col items-center">
                     <div className="bg-green-100 p-3 rounded-full mb-3">
@@ -30,7 +30,6 @@ export default function Cards() {
                 </CardHeader>
             </Card>
 
-            {/* Card 3 */}
             <Card className="w-full max-w-sm text-center shadow-md">
                 <CardHeader className="flex flex-col items-center">
                     <div className="bg-purple-100 p-3 rounded-full mb-3">

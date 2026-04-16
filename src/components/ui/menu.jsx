@@ -1,6 +1,7 @@
 import { Calculator } from "lucide-react"
 import { Button } from "./button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Menu() {
     return (
@@ -30,7 +31,7 @@ export default function Menu() {
                     
                     <div className="mt-6 flex gap-4">
                         <Button className="bg-green-600 text-white hover:bg-green-700">
-                            Entrar
+                            <Link href="/cadastro">Entrar</Link>
                         </Button>
                         <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
                             Saiba Mais
