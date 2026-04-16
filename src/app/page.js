@@ -1,11 +1,9 @@
-import Image from "next/image";
+import TopbarMenu from "@/components/ui/topbarMenu";
 
 export default function Home() {
   return (
     <main>
-      <h1>
-        home
-      </h1>
+      <TopbarMenu/>
     </main>
   );
 }
