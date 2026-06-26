@@ -1,6 +1,6 @@
 "use client";
 
-import { ChartBar, LayoutDashboard, Link, Link2 } from "lucide-react";
+import { ChartBar, LayoutDashboard, Link, Link2, ScaleIcon } from "lucide-react";
 
 import {
   Sidebar,
@@ -32,6 +32,11 @@ const data = {
       url: "/analytics",
       icon: ChartBar,
     },
+    {
+      title: "IMC",
+      url: "/imc",
+      icon: ScaleIcon,
+    },
   ],
 };
 
@@ -39,12 +44,12 @@ export function AppSidebar({ ...props }) {
   const { data: session, isPending } = authClient.useSession();
   const user = session?.user
     ? {
-        name: session.user.name ?? "Usuário",
-        email: session.user.email ?? "",
-        image:
-          session.user.image ??
-          `https://api.dicebear.com/10.x/adventurer-neutral/svg?seed=${session.user.name}`,
-      }
+      name: session.user.name ?? "Usuário",
+      email: session.user.email ?? "",
+      image:
+        session.user.image ??
+        `https://api.dicebear.com/10.x/adventurer-neutral/svg?seed=${session.user.name}`,
+    }
     : null;
   return (
     <Sidebar collapsible="offcanvas" {...props}>
