@@ -1,4 +1,6 @@
-import { CadastroForm } from "@/components/cadastro-form";
+// src/app/(public)/register/page.js
+
+import CadastroForm from "@/components/cadastro-form"; 
 
 export default function Page() {
   return (
